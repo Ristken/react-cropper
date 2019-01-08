@@ -1,15 +1,14 @@
 {
   "name": "react-cropper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cropper as React components",
   "main": "dist/react-cropper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ./",
+    "lint": "eslint ./ --fix",
     "build": "babel ./src/react-cropper.js --out-file dist/react-cropper.js",
     "clean": "rimraf dist && mkdir dist",
     "prepublish": "npm run clean && npm run build",
-    "prebuild": "npm run lint",
     "build-example": "npm run build && webpack --config webpack.config.js",
     "start": "babel-node server.js"
   },
